@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Trama, la mejor opción de contenido bajo demanda y televisión en directo. Todo tipo de contenido al alcance de tu dedo.">
+    <meta name="keywords" content="Trama, películas, series, IPTV, televisión, películas, contenido bajo demanda, VOD">
+    <meta name="author" content="Trama">
+    <meta name="robots" content="index, follow">
+    <title>Trama - Contenido bajo demanda y Televisión en directo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="css/full.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <style>
+        main {
+            width: 99vw !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Trama<sup>&#8226;</sup></h1>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="top-menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="search.html">Buscar</a></li>
+
+            <li><a href="tv.html">TV</a></li>
+
+            <li><a href="cine.html">Cine</a></li>
+
+
+            <li><a href="series.html">Series</a></li>
+
+            <li><a href="deportes.html">Deportes<span class="live-brod">&#8226;</span></a></li>
+
+
+            <li><a href="grabaciones.html">Grabaciones</a></li>
+
+
+            <li><a href="mi-lista.html">Mi lista</a></li>
+
+            <li><a href="opciones.html">Opciones</a></li>
+
+        </ul>
+    </header>
+    <main>
+
+
+
+
+        <div class="contenido-deportes">
+
+            <h2 class="encabezado" style="margin-bottom: 30px;">Tus canales deportivos<span
+                    class="acompañamiento-mobile"> | </span><span class="button-more-3">Ver más</span></h2>
+            <div class="carousel-channels"> <button class="nav-button-channels left"
+                    onclick="prevChannel()">&lt;</button>
+                <div class="channels-container" id="channelsContainer">
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/teledeporte.png" alt="Teledeporte">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 40%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels"> <span>Escalada deportiva - JJ OO París 2024 (T2024):
+                                    Final de la combinada (M)</span> </div>
+                            <div class="program-time-channels">20:30 - 21:30</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/esport3.png" alt="Esport 3">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 20%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels"> <span>No tenim vergony</span> </div>
+                            <div class="program-time-channels">20:35 - 21:35</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/dazn1.png" alt="DAZN 1">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 80%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels"> <span>DAZN 1</span> </div>
+                            <div class="program-time-channels">20:00 - 21:00</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/dazn2.png" alt="DAZN 2">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 95%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels"> <span>DAZN 2</span> </div>
+                            <div class="program-time-channels">20:00 - 20:45</div>
+                        </div>
+                    </div>
+
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/vamos.png" alt="M+ Vamos">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 90%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels">Rugby Championship (T2024): Nueva Zelanda - Argentina
+                            </div>
+                            <div class="program-time-channels">20:30 - 21:00</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/ellas_vamos.png" alt="M+ Ellas Vamos">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 50%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels">Ellas Vamos</div>
+                            <div class="program-time-channels">20:30 - 21:35</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/deportes.png" alt="M+ Deportes">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 80%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels"> <span>NBA (T11/12): New York Knicks - Los Angeles
+                                    Lakers</span> </div>
+                            <div class="program-time-channels">20:00 - 21:00</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/deportes2.png" alt="M+ Deportes">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 80%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels"> <span>M+ Deportes 2</span> </div>
+                            <div class="program-time-channels">20:00 - 21:00</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/EUROSPORT-1.png" alt="Eurosport 1">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 75%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels">Atletismo - JJ OO París 2024 (T2024): Día 9</div>
+                            <div class="program-time-channels">19:58 - 21:04</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/EUROSPORT-2.png" alt="Eurosport 2">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 75%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels">A Day At The Olympics (T2024): 10/08/2024</div>
+                            <div class="program-time-channels">20:30 - 21:51</div>
+                        </div>
+                    </div>
+
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/golf.png" alt="M+ Golf">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 95%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels">PGA Tour The Cut (T2024): Episodio 32</div>
+                            <div class="program-time-channels">19:09 - 21:02</div>
+                        </div>
+                    </div>
+                    <div class="channel-channels">
+                        <div class="logo-channels">
+                            <img src="img/golf2.png" alt="M+ Golf 2">
+                        </div>
+                        <div class="progress-bar-channels">
+                            <div class="progress-channels" style="width: 100%;"></div>
+                        </div>
+                        <div class="program-info-channels">
+                            <div class="program-name-channels">M+ Golf 2</div>
+                            <div class="program-time-channels">20:12 - 20:58</div>
+                        </div>
+                    </div>
+
+                </div> <button class="nav-button-channels right" onclick="nextChannel()">&gt;</button>
+            </div>
+
+
+
+
+            <h2 class="encabezado">Ahora en directo <span class="acompañamiento-mobile"> | </span><span
+                    class="button-more-3" data-url="deportes-all.html">Ver más</span></h2>
+            <div class="container-events">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide triatlon">
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-1.png"
+                                        alt="Eurosport 1"></div>
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-1.png"
+                                        alt="Eurosport 4K"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 1, Eurosport 4K</p>
+                                    <p class="schedule2">09:50</p>
+                                    <div class="live-now" style="display: block !important;"
+                                        data-start="2024-08-05 07:50:00" data-end="2024-08-05 10:20:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Relevo mixto</h2>
+                            <p class="deporte-sin-logo"><b>Triatlón</b></p>
+                            <p>Triatlón - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+                        <div class="slide futbol">
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/M-LALIGATV-2.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">M+ LALIGA TV 2</p>
+                                    <p class="schedule2">10:55</p>
+                                    <div class="live-now" style="display: block !important;"
+                                        data-start="2024-08-05 10:30:00" data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Kitchee - At. Madrid</h2>
+                            <p class="deporte-sin-logo"><b>Fútbol internacional</b></p>
+                            <p>Amistosos At. Madrid (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <div class="slide tenis">
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/deportes2.png"
+                                        alt="M+ Deportes 2">
+                                </div>
+                                <div>
+                                    <p class="sportslive-name">M+ Deportes 2</p>
+                                    <p class="schedule2">11:05</p>
+                                    <div class="live-now" style="display: block !important;"
+                                        data-start="2024-08-05 10:30:00" data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Etcheverry - Jarry</h2>
+                            <p class="deporte-sin-logo"><b>Tenis</b></p>
+                            <p>Torneo de Montreal (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <div class="slide baloncesto">
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/eurosport6.png"
+                                        alt="Eurosport 6">
+                                </div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 6</p>
+                                    <p class="schedule2">12:45</p>
+                                    <div class="live-now" style="display: block !important;"
+                                        data-start="2024-08-05 10:30:00" data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Alemania - Grecia</h2>
+                            <p class="deporte-sin-logo"><b>Baloncesto</b></p>
+                            <p>Baloncesto (M) - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <div class="slide artesmarciales">
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/eurosport7.png"
+                                        alt="Eurosport 7">
+                                </div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 7</p>
+                                    <p class="schedule2">12:50</p>
+                                    <div class="live-now" style="display: block !important;"
+                                        data-start="2024-08-05 10:30:00" data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Día 2 - Sesión 1</h2>
+                            <p class="deporte-sin-logo"><b>Artes marciales</b></p>
+                            <p>Lucha - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <!-- Repite las tarjetas de evento según sea necesario -->
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 0)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 0)">&#10095;</button>
+            </div>
+
+
+            <h2 class="encabezado">Destacados<span class="acompañamiento-mobile"> | </span><span class="button-more-3"
+                    data-url="deportes-all.html">Ver más</span></h2>
+            <div class="container-events" data-url="deportes-all.html">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide rugby">
+                            <div class="favorite-star">★</div>
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/vamos.png"
+                                        alt="M+ Vamos"></div>
+                                <div>
+                                    <p class="sportslive-name">M+ Vamos</p>
+                                    <p class="schedule2">06:20</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Australia - Sudáfrica</h2>
+                            <p class="deporte-sin-logo"><b>Rugby</b></p>
+                            <p>Rugby Championship (T2024)</p>
+                            <p class="fecha2">Sáb · 08/08/2024</p>
+                        </div>
+
+
+                        <div class="slide golf">
+                            <div class="favorite-star">★</div>
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/golf.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">M+ Golf</p>
+                                    <p class="schedule2">12:45</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Wyndham Championship (Main Feed VO) Jornada 1. Parte 1</h2>
+                            <p class="deporte-sin-logo"><b>Golf</b></p>
+                            <p>PGA Tour (T2024)</p>
+                            <p class="fecha2">Jue · 08/08/2024</p>
+                        </div>
+
+
+                        <div class="slide ciclismo">
+                            <div class="favorite-star">★</div>
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-1.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 1</p>
+                                    <p class="schedule2">17:10</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Día 4</h2>
+                            <p class="deporte-sin-logo"><b>Ciclismo</b></p>
+                            <p>Ciclismo en pista - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Jue · 10/08/2024</p>
+                        </div>
+
+
+                        <div class="slide hipica">
+                            <div class="favorite-star">★</div>
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/deportes4.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">M+ Deportes 4</p>
+                                    <p class="schedule2">21:25</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Temporada Verano. Nocturna 08/08/2024</h2>
+                            <p class="deporte-sin-logo"><b>Hípica</b></p>
+                            <p>Hipódromo de La Zarzuela (T2024)</p>
+                            <p class="fecha2">Jue · 08/08/2024</p>
+                        </div>
+
+
+
+                        <div class="slide hockey">
+                            <div class="favorite-star">★</div>
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-2.png"
+                                        alt="Eurosport 2"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 2</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Alemania - Países Bajos</h2>
+                            <p class="deporte-sin-logo"><b>Hockey hierba</b></p>
+                            <p>Hockey hierba (M) - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Jue · 11/08/2024</p>
+                        </div>
+
+
+                        <!-- Repite las tarjetas de evento según sea necesario -->
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 1)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 1)">&#10095;</button>
+            </div>
+
+            <h2 class="encabezado">Torneos<span class="acompañamiento-mobile"> | </span><span class="button-more-3"
+                    data-url="deportes-all.html">Ver
+                    más</span></h2>
+            <div class="container-events">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide card card-blue">
+                            <div class="text">LaLiga EA Sports (T2024/2025)</div>
+                            <i class="icon fas fa-trophy"></i>
+                        </div>
+                        <div class="slide card card-blue">
+                            <div class="text">UEFA Champions League</div>
+                            <i class="icon fas fa-trophy"></i>
+                        </div>
+                        <div class="slide card card-blue">
+                            <div class="text">Mutua Madrid Open</div>
+                            <i class="icon fas fa-trophy"></i>
+                        </div>
+
+                        <div class="slide card card-blue">
+                            <div class="text">GP De EUA</div>
+                            <i class="icon fas fa-trophy"></i>
+                        </div>
+
+                        <div class="slide card card-blue">
+                            <div class="text">PGA World Tour</div>
+                            <i class="icon fas fa-trophy"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 2)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 2)">&#10095;</button>
+            </div>
+
+            <h2 class="encabezado">Deportes<span class="acompañamiento-mobile"> | </span><span class="button-more-3"
+                    data-url="deportes-all.html">Ver
+                    más</span></h2>
+            <div class="container-events">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide card card-green">
+                            <div class="text">Fútbol español</div>
+                            <i class="icon fas fa-baseball-ball"></i>
+                        </div>
+                        <div class="slide card card-green">
+                            <div class="text">Fútbol internacional</div>
+                            <i class="icon fas fa-baseball-ball"></i>
+                        </div>
+                        <div class="slide card card-green">
+                            <div class="text">Tenis</div>
+                            <i class="icon fas fa-baseball-ball"></i>
+                        </div>
+
+                        <div class="slide card card-green">
+                            <div class="text">Motor</div>
+                            <i class="icon fas fa-baseball-ball"></i>
+                        </div>
+
+                        <div class="slide card card-green">
+                            <div class="text">Golf</div>
+                            <i class="icon fas fa-baseball-ball"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 3)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 3)">&#10095;</button>
+            </div>
+
+
+            <h2 class="encabezado">Hoy<span class="acompañamiento-mobile"> | </span><span class="button-more-3"
+                    data-url="deportes-all.html">Ver
+                    más</span></h2>
+            <div class="container-events">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+
+
+
+                        <div class="slide esqui">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-1.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 1</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Ruka - Día 1</h2>
+                            <p class="deporte-sin-logo"><b>Esquí</b></p>
+                            <p>Copa del Mundo de esquí alpino</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <div class="slide natacion">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/la1_3.png" alt="LA 1">
+                                </div>
+                                <div>
+                                    <p class="sportslive-name">LA 1</p>
+                                    <p class="schedule2">19:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Rutina acrobática equipos</h2>
+                            <p class="deporte-sin-logo"><b>Natación sincronizada</b></p>
+                            <p>Natación artística - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <div class="slide motor">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/ellas_vamos.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">M+ Ellas V</p>
+                                    <p class="schedule2">16:10</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Superpole</h2>
+                            <p class="deporte-sin-logo"><b>Motor</b></p>
+                            <p>Campeonato del Mundo de Motociclismo Femenino (T2024): Portugal</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+                        <div class="slide motociclismo">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/dazn1.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">DAZN 1</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Algarve - FP2</h2>
+                            <p class="deporte-sin-logo"><b>Motociclismo</b></p>
+                            <p>Mundial de Superbike (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+                        <div class="slide boxeo">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/eurosport7.png"
+                                        alt="Eurosport 1">
+                                </div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 7</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Día 12</h2>
+                            <p class="deporte-sin-logo"><b>Boxeo</b></p>
+                            <p>Boxeo - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Lun · 05/08/2024</p>
+                        </div>
+
+
+
+                        <!-- Repite las tarjetas de evento según sea necesario -->
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 4)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 4)">&#10095;</button>
+            </div>
+
+
+            <h2 class="encabezado">Mañana<span class="acompañamiento-mobile"> | </span><span class="button-more-3"
+                    data-url="deportes-all.html">Ver
+                    más</span></h2>
+            <div class="container-events">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide atletismo">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/la1_3.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">LA 1</p>
+                                    <p class="schedule2">19:00</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Día 7 - Sesión vespertina</h2>
+                            <p class="deporte-sin-logo"><b>Atletismo</b></p>
+                            <p>Atletismo - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Mar · 06/08/2024</p>
+                        </div>
+
+
+                        <div class="slide voleybol">
+
+                            <div class="sportslive-info">
+                                <div>
+                                    <p class="sportslive-name">Eurosport 9</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Brasil - Estados Unidos</h2>
+                            <p class="deporte-sin-logo"><b>Voleibol</b></p>
+                            <p>Voleibol (F) - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Mar · 06/08/2024</p>
+                        </div>
+
+
+
+                        <div class="slide padel">
+
+                            <div class="sportslive-info">
+                                <div>
+                                    <p class="sportslive-name">Eurosport 3</p>
+                                    <p class="schedule2">19:55</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Alemania - Japón</h2>
+                            <p class="deporte-sin-logo"><b>Pádel</b></p>
+                            <p>World Padel Tour</p>
+                            <p class="fecha2">Mar · 06/08/2024</p>
+                        </div>
+
+
+                        <div class="slide waterpolo">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-1.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 2</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Final de consolación</h2>
+                            <p class="deporte-sin-logo"><b>Waterpolo</b></p>
+                            <p>Waterpolo (M) - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Mar · 06/08/2024</p>
+                        </div>
+
+                        <!-- Repite las tarjetas de evento según sea necesario -->
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 5)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 5)">&#10095;</button>
+            </div>
+
+
+
+            <h2 class="encabezado">Más eventos<span class="acompañamiento-mobile"> | </span><span class="button-more-3"
+                    data-url="deportes-all.html">Ver más</span></h2>
+            <div class="container-events">
+                <div class="more-button" data-url="deportes-all.html">
+                    <img src="img/more-2.png" alt="More">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+
+
+                        <div class="slide piraguismo">
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-2.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 2</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Italia - Estonia</h2>
+                            <p class="deporte-sin-logo"><b>Piragüismo</b></p>
+                            <p>Piragüismo esprint - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Mier · 07/08/2024</p>
+                        </div>
+
+
+
+                        <div class="slide balonmano">
+
+                            <div class="sportslive-info">
+                                <div>
+                                    <p class="sportslive-name">Eurosport 8</p>
+                                    <p class="schedule2">16:15</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Suecia - Francia</h2>
+                            <p class="deporte-sin-logo"><b>Balonmano</b></p>
+                            <p>Balonmano (F) - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Jue · 08/08/2024</p>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="slide pingpong">
+
+                            <div class="sportslive-info">
+                                <div class="sportslives"><img class="sportslive-logo" src="img/EUROSPORT-1.png"
+                                        alt="Eurosport 1"></div>
+                                <div>
+                                    <p class="sportslive-name">Eurosport 1</p>
+                                    <p class="schedule2">10:30</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">China - Francia</h2>
+                            <p class="deporte-sin-logo"><b>Tenis de mesa</b></p>
+                            <p>Tenis de mesa - JJ OO París 2024 (T2024)</p>
+                            <p class="fecha2">Jue · 08/08/2024</p>
+                        </div>
+
+
+
+                        <div class="slide otros">
+
+                            <div class="sportslive-info">
+                                <div>
+                                    <p class="sportslive-name">Desconocido</p>
+                                    <p class="schedule2">N/A</p>
+                                    <div class="live-now" data-start="2024-08-05 10:30:00"
+                                        data-end="2024-08-05 12:00:00">En directo</div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Desconocido</h2>
+                            <p class="deporte-sin-logo"><b>Desconocido</b></p>
+                            <p>Desconocido</p>
+                            <p class="fecha2">Vie · 09/08/2024</p>
+                        </div>
+
+
+                        <!-- Repite las tarjetas de evento según sea necesario -->
+                    </div>
+                </div>
+                <button class="nav-button left" onclick="moveSlide(-1, 6)">&#10094;</button>
+                <button class="nav-button right" onclick="moveSlide(1, 6)">&#10095;</button>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/full.js"></script>
+
+</body>
+
+</html>

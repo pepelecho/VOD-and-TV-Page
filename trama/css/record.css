@@ -1,0 +1,264 @@
+       /* Mi recording */
+
+
+       .contenido-recording {
+           padding: 100px;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+       }
+
+       .recording-recordings {
+           flex: 1;
+           min-width: 200px;
+           max-width: 300px;
+       }
+
+       .selected-recordings {
+           padding: 20px 20px;
+           background-color: #fff;
+           border-radius: 5px;
+           margin-bottom: 10px;
+       }
+
+       .unselected-recordings {
+           padding: 20px 20px;
+           margin-bottom: 10px;
+       }
+
+       .texto-negro-recordings,
+       .texto-blanco-recordings {
+           font-size: 18px;
+           cursor: pointer;
+       }
+
+       .texto-negro-recordings {
+           color: #242424;
+       }
+
+       .texto-blanco-recordings {
+           color: #fff;
+       }
+
+       .contenido-principal {
+           display: flex;
+           flex-direction: column;
+           /* Alinea los programas en forma de recording verticalmente */
+           flex: 2;
+           min-width: 300px;
+       }
+
+
+       .fa-chevron-down {
+           color: #fafafa !important;
+       }
+
+       .fa-chevron-up {
+           color: #fafafa !important;
+       }
+
+       .programa-recordings {
+           cursor: pointer;
+           margin-left: 5px;
+           flex: 2;
+           display: flex;
+           flex-direction: column;
+           margin-right: 20px;
+           margin-bottom: 20px;
+       }
+
+       .contenedor-descripcion-programa-recordings {
+           width: 100%;
+           /* Asegura que la descripción ocupe todo el ancho disponible */
+           height: auto;
+           color: #ccc;
+           background: #33333345;
+           border-radius: 10px;
+       }
+
+       /* Estilo del botón de descripción */
+       .titulo-con-boton {
+           display: flex;
+       }
+
+       .btn-descripcion {
+           background: none;
+           border: none;
+           cursor: pointer;
+           font-size: 30px;
+           transition: transform 0.3s ease;
+       }
+
+       /* Flecha hacia abajo por defecto */
+       .btn-descripcion .fa-chevron-down {
+           transform: rotate(0deg);
+       }
+
+       /* Flecha hacia arriba cuando está visible */
+       .btn-descripcion.active .fa-chevron-down {
+           transform: rotate(180deg);
+       }
+
+       /* Estilo de la descripción */
+       .contenedor-descripcion-programa-recordings {
+           max-height: 0;
+           overflow: hidden;
+           opacity: 0;
+           transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin-bottom 0.3s ease;
+
+
+       }
+
+       .contenedor-descripcion-programa-recordings.visible {
+           max-height: 1000px;
+           /* Valor alto para permitir el despliegue completo */
+           opacity: 1;
+       }
+
+       .fa-video {
+           color: #fafafa;
+       }
+
+
+       .programa-milista {
+           padding: 20px;
+       }
+
+
+       .titulo-programa-milista {
+           font-size: 25px;
+           color: #fafafa;
+           margin-bottom: 5px;
+           display: flex;
+           /* Usa flexbox para alinear el punto y el texto en línea */
+           align-items: center;
+           /* Alinea verticalmente el punto y el texto */
+       }
+
+       .hora-programa-milista {
+           color: #a0a0a0;
+           margin-bottom: 10px;
+       }
+
+       .logo-programa-milista {
+           object-fit: cover;
+           max-width: 60px;
+           height: auto;
+       }
+
+       @media screen and (max-width: 1245px) {
+           .contenedor-descripcion-programa-recordings {
+               margin-top: 12px;
+               width: 100%;
+           }
+
+           .contenido-principal {
+               flex-direction: column;
+           }
+
+           .programa-recordings {
+               margin-right: 0;
+           }
+       }
+
+
+
+
+
+       @media screen and (max-width: 899px) {
+           .contenido-recording {
+               padding: 100px 20px;
+           }
+
+           .recording-recordings,
+           .contenido-principal {
+               flex: 1 1 100%;
+           }
+
+           .recording-recordings {
+               display: none;
+           }
+
+           .selected-recordings,
+           .unselected-recordings {
+               flex: 1 1 calc(50% - 10px);
+               /* Cada opción ocupa el 50% del ancho menos un pequeño margen */
+               box-sizing: border-box;
+               margin-bottom: 10px;
+           }
+
+           .recordings-item {
+               max-width: 50vw;
+           }
+
+           .recordings-item p {
+               font-size: 15px !important;
+           }
+
+           .titulo-programa-recordings {
+               font-size: 20px;
+           }
+
+           #record-selector {
+               display: block;
+           }
+       }
+
+
+       @media (min-width: 900px) {
+
+           .contenido-recording {
+               padding: 100px 50px;
+           }
+
+
+           #record-selector {
+               display: none;
+           }
+
+       }
+
+
+       #record-selector>option {
+           font-family: 'Open Sans', sans-serif;
+           color: #555;
+           background-color: rgb(247, 247, 247);
+           background-image: none;
+           font-size: 15px;
+           height: 50px;
+           padding: 15px;
+           border: 1px solid rgb(41, 18, 18);
+       }
+
+       /* Estilos para pantallas grandes */
+       @media (min-width: 1024px) and (max-width: 1261px) {
+
+           .movie2 {
+               width: calc(100% / 4 - 1em) !important;
+           }
+       }
+
+       .selected-programa {
+           background-color: #4CAF50;
+           /* Cambia a un color más claro o como prefieras */
+           /* Añade un borde o cambia el color según lo necesites */
+           border-radius: 5px;
+           padding: 20px;
+       }
+
+       .selected-programa .titulo-programa-milista {
+           color: #fafafa !important;
+       }
+
+       .selected-programa p {
+           color: #ccc;
+       }
+
+       hr {
+           height: 0px;
+           /*solo queremos borde*/
+           text-align: left;
+           border-top: 0px;
+           /*quita el grosor extra de Opera y FFox*/
+           border-bottom: #c3c3c3 solid 1px;
+       }

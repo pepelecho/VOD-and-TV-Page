@@ -1,0 +1,137 @@
+       /* Estilo general para los slides */
+       .contenido-deportes-2 {
+           width: 95.5vw;
+           margin: 100px auto 0px auto;
+       }
+
+       .content-slider-all {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 1rem;
+           /* Espacio entre los slides */
+       }
+
+       /* Estilo individual para cada slide */
+       .slide {
+           flex: 1 2 calc(50vw - 5em);
+           /* Dos slides por fila menos el espacio del gap */
+           box-sizing: border-box;
+           /* Puedes ajustar el tamaño mínimo de los slides si es necesario */
+           min-width: 300px;
+           max-width: 100%;
+       }
+
+       /* Ajustes para pantallas más pequeñas */
+       @media (max-width: 768px) {
+           .slide {
+               flex: 1 1 100%;
+               /* Una columna por fila en pantallas más pequeñas */
+           }
+       }
+
+       .triatlon::after {
+           background-position: top !important;
+       }
+
+
+       .futbol::after {
+           background-position: bottom !important;
+       }
+
+       .tenis::after {
+           background-position: bottom !important;
+       }
+
+
+       .baloncesto::after {
+           background-position: top !important;
+       }
+
+       .artesmarciales::after {
+           background-position: top !important;
+       }
+
+
+       .rugby::after {
+           background-position: top !important;
+       }
+
+
+       .golf::after {
+           background-position: center !important;
+       }
+
+
+       .ciclismo::after {
+           background-position: top !important;
+       }
+
+       .hipica::after {
+           background-position: top !important;
+       }
+
+
+       .hockey::after {
+           background-position: top !important;
+       }
+
+       .esqui::after {
+           background-position: top !important;
+       }
+
+
+       .natacion::after {
+           background-position: center !important;
+       }
+
+
+       .motor::after {
+           background-position: top !important;
+       }
+
+
+
+       .motociclismo::after {
+           background-position: top !important;
+       }
+
+
+       .boxeo::after {
+           background-position: top !important;
+       }
+
+       .atletismo::after {
+           background-position: center !important;
+       }
+
+       .voleybol::after {
+           background-position: center !important;
+       }
+
+
+       .padel::after {
+           background-position: center !important;
+       }
+
+       .waterpolo::after {
+           background-position: center !important;
+       }
+
+       .piraguismo::after {
+           background-position: center !important;
+       }
+
+       .balonmano::after {
+           background-position: top !important;
+       }
+
+
+       .pingpong::after {
+           background-position: top !important;
+       }
+
+
+
+       .otros::after {
+           background-position: top !important;
+       }

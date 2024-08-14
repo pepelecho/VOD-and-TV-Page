@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Trama, la mejor opción de contenido bajo demanda y televisión en directo. Todo tipo de contenido al alcance de tu dedo.">
+	<meta name="keywords" content="Trama, películas, series, IPTV, televisión, películas, contenido bajo demanda, VOD">
+	<meta name="author" content="Trama">
+	<meta name="robots" content="index, follow">
+	<title>Trama - Contenido bajo demanda y Televisión en directo</title>
+	<!-- Favicons -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<meta name="theme-color" content="#000000">
+	<!-- Estilos y fuentes -->
+	<link rel="stylesheet" href="css/full.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="logo">Trama<sup>&#8226;</sup></h1>
+		<div class="menu-toggle">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<ul class="top-menu">
+			<li><a href="index.html">Inicio</a></li>
+
+			<li><a href="search.html">Buscar</a></li>
+
+			<li><a href="tv.html">TV</a></li>
+
+			<li><a href="cine.html">Cine</a></li>
+
+
+			<li><a href="series.html">Series<span class="live-brod">&#8226;</span></a></li>
+
+			<li><a href="deportes.html">Deportes</a></li>
+
+
+			<li><a href="grabaciones.html">Grabaciones</a></li>
+
+
+			<li><a href="mi-lista.html">Mi lista</a></li>
+
+			<li><a href="opciones.html">Opciones</a></li>
+
+		</ul>
+	</header>
+	<main>
+		<div class="movie-card"
+			style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%), url('https://image.tmdb.org/t/p/original/etj8E2o0Bud0HkONVQPjyCkIvpv.jpg');">
+			<div class="movie-content">
+				<h1 class="title-movie">La casa del dragón</h1>
+				<!-- Vista para pantallas grandes -->
+				<div class="desktop-view">
+					<div class="container"> <span class="rating">8.4</span> <span class="info-movie">2022</span> <span
+							class="info-movie">·</span> <span class="info-movie">2 temporadas</span> <span
+							class="info-movie genre-dot">·</span> <span class="genre">Sci-Fi & Fantasy, Drama, Action &
+							Adventure</span> </div>
+				</div>
+				<!-- Vista para pantallas móviles -->
+				<div class="mobile-view">
+					<div class="table-container">
+						<div class="table-cell"> <span class="rating">8.4</span> </div>
+						<div class="table-cell">
+							<div class="info-row"> <span class="info-movie">2022</span> <span
+									class="info-movie">·</span> <span class="info-movie">2 temporadas</span> </div>
+							<div class="genre-row"> <span class="info-movie genre-dot">·</span> <span
+									class="genre-mobile">Sci-Fi & Fantasy, Drama, Action & Adventure</span> </div>
+						</div>
+					</div>
+				</div>
+				<p class="director"><span class="director2">Creador:</span>George R. R. Martin, Ryan Condal</p>
+				<p class="cast"><span class="director2">Reparto:</span>Matt Smith, Fabien Frankel,Emma D'Arcy, Olivia
+					Cooke, Rhys Ifans, Steve Toussaint, Jefferson Hall</p>
+				<p class="sinopsis">Basada en el libro 'Fuego y Sangre' de George R.R. Martin. La serie se centra en la
+					casa Targaryen, trescientos años antes de los eventos vistos en 'Juego de Tronos'.</p>
+				<div class="button-container"> <button class="stream-button">
+						<i class="fas fa-play buttons-i"></i>
+						<span class="button"> Ver ahora</span>
+					</button>
+					<div class="dropdown"> <button class="stream-button" id="dropdownButton">
+							<i class="fas fa-plus buttons-i"></i>
+							<span class="button"> Más</span>
+						</button> <button class="close-button" id="closeButton" style="display: none;">
+							<i class="fas fa-minus buttons-i"></i>
+							<span class="button"> Menos</span>
+						</button>
+						<div class="dropdown-content"> <a href="#"><i class="fas fa-external-link-alt buttons-i"></i>
+								Ver en reproductor externo</a> <a href="#"><i class="fas fa-video buttons-i"></i>
+								Traíler</a> <a href="#"><i class="fas fa-bookmark buttons-i"></i> Añadir a mi lista</a>
+						</div>
+					</div>
+					<!-- Botones adicionales que deben aparecer en resoluciones grandes --><button
+						class="stream-button desktop-only"><i class="fas fa-external-link-alt buttons-i"></i><span
+							class="button"> Ver en reproductor externo</span></button> <button
+						class="stream-button desktop-only"><i class="fas fa-video buttons-i"></i><span class="button">
+							Traíler</span></button> <button class="stream-button desktop-only"><i
+							class="fas fa-bookmark buttons-i"></i><span class="button"> Añadir a mi
+							lista</span></button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="serie">
+
+
+			<label class="select">
+				<select id="season-selector">
+					<option value="1">Temporada 1</option>
+					<option value="2">Temporada 2</option>
+				</select>
+			</label>
+
+
+			<nav class="season-container no-mobile"> <a href="#" class="season-item initial">Temporada 1</a> <a href="#"
+					class="season-item">Temporada 2</a> </nav>
+			<!-- Temporada 1 (clase active)-->
+			<div class="season-scroll active"> <button class="nav-button left">&lt;</button>
+				<div class="season-container">
+					<div class="chapter-container" data-url="chapter.html" data-year="21 de agosto de 2022"
+						data-duration="1h 6m" data-vote-average="7.9"
+						data-synopsis="Viserys prepara un torneo para celebrar el nacimiento de su segundo hijo. Rhaenyra le da la bienvenida a su tío Daemon cuando vuelve a la Fortaleza Roja.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/3oumSnkavc4pcMFvPbgWDUTclNb.jpg"
+							alt="1x01">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E1. Los herederos del Dragón</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="28 de agosto de 2022" data-duration="54m"
+						data-vote-average="7.9"
+						data-synopsis="Rhaenyra se excede en el Consejo Privado. Viserys debe afianzar la sucesión mediante el matrimonio. Daemon anuncia sus intenciones.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/uyWlPCKMPcjxjiKY6xFKtdbkFSR.jpg"
+							alt="1x02">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E2. El Príncipe Canalla</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="4 de septiembre de 2022" data-duration="1h 4m"
+						data-vote-average="8.1"
+						data-synopsis="Daemon y la Serpiente Marina se enfrentan al Benefactor de los Cangrejos. El reino celebra la segunda onomástica de Aegon. Rhaenyra afronta la posibilidad de casarse.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/9sS5Pq96kCR3RKoWvGvT6Xa2urU.jpg"
+							alt="1x03">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E3. El segundo de su nombre</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="11 de septiembre de 2022" data-duration="1h 3m"
+						data-vote-average="7.7"
+						data-synopsis="Rhaenyra vuelve pronto de su viaje por Poniente. Daemon lleva a la princesa a visitar la calle de la Seda al anochecer.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/mW2a20R8VZqENHAmz47x21FCoYV.jpg"
+							alt="1x04">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E4. El rey del mar Angosto</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="18 de septiembre de 2022" data-duration="1h"
+						data-vote-average="7.8"
+						data-synopsis="Daemon visita a su esposa. Viserys y Rhaenyra negocian acuerdos con los Velaryons. Alicent investiga la verdad sobre la princesa.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/xee6kQm6uMiGKHMCKZpFGVIAGe7.jpg"
+							alt="1x05">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E5. Iluminamos el camino</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="25 de septiembre de 2022" data-duration="1h 8m"
+						data-vote-average="7.5"
+						data-synopsis="Han pasado diez años. Rhaenyra se enfrenta a las continuas especulaciones de Alicent sobre sus hijos, mientras Daemon y Laena sopesan una oferta en Pentos.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/lcBTDoCkBTJAdi8VagMQdzB6RYi.jpg"
+							alt="1x06">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E6. La princesa y la reina</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="2 de octubre de 2022" data-duration="59m"
+						data-vote-average="6.8"
+						data-synopsis="Cuando las familias se reúnen en Marcaderiva para un funeral, Viserys pide que las luchas internas se acaben y Alicient exige justicia.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/nasv3ej4xd0An87ExkcIFL8ePvE.jpg"
+							alt="1x07">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E7. Marcaderiva</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="9 de octubre de 2022" data-duration="1h 8m"
+						data-vote-average="8.4"
+						data-synopsis="Seis años después. Cuando la sucesión de Marcaderiva se vuelve crítica, Rhaenyra intenta ponerse de acuerdo con Rhaenys.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/iSL0p7ZF6X8cfoDwfAAPavVZFlC.jpg"
+							alt="1x08">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E8. El señor de las mareas</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="16 de octubre de 2022" data-duration="58m"
+						data-vote-average="7.8"
+						data-synopsis="Alicent les pide a Aemont y a Cole que localicen a Aegon. Otto reúne a las grandes casas de Poniente para confirmar su lealtad.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/hQV9o7EM9Ex8vobmM830HPrv924.jpg"
+							alt="1x09">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E9. El consejo verde</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="23 de octubre de 2022" data-duration="1h"
+						data-vote-average="8.5"
+						data-synopsis="Mientras lamenta una pérdida trágica, Rhaenyra intenta mantener el reino unido y Daemon se prepara para la guerra.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/8QXW8N0FneCDf8PkTJ0HUXpuVin.jpg"
+							alt="1x10">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E10. La reina negra</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+				</div> <button class="nav-button right">&gt;</button>
+			</div>
+			<!-- Fin temporada 1 -->
+			<!-- Temporada 2 -->
+			<div class="season-scroll"> <button class="nav-button left">&lt;</button>
+				<div class="season-container">
+					<div class="chapter-container" data-year="16 de junio de 2024" data-duration="59m"
+						data-vote-average="8.0"
+						data-synopsis="Mientras Alicent se preocupa por el Consejo Privado de Aegon, Rhaenyra se enfrenta a una decisión trascendental.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/sFplF5Ya6irRVvMUInjE57fjO8Z.jpg"
+							alt="2x01">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E1. Hijo por hijo</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="23 de junio de 2024" data-duration="1h 9m"
+						data-vote-average="7.6"
+						data-synopsis="Mientras Otto traza un plan para que el pueblo se ponga en contra de ella, Rhaenyra cuestiona la lealtad de Daemon.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/plVChbDtiWCZowdqiKThSXZaWYa.jpg"
+							alt="2x02">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E2. Rhaenyra la Cruel</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="30 de junio de 2024" data-duration="1h 7m"
+						data-vote-average="7.8"
+						data-synopsis="Mientras resurgen antiguos rencores, Rhaenys sugiere que Alicent puede entrar en razón mientras que los hombres que la rodean buscan el derramamiento de sangre. Ser Criston propone un plan audaz. Daemon llega a Harrenhal para reunir un ejército para los Negros.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/p0qHRRhD8QOONaxJBzUewTRWADO.jpg"
+							alt="2X03">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E3. El molino ardiente</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="7 de julio de 2024" data-duration="56m"
+						data-vote-average="7.5"
+						data-synopsis="Rhanerya sigue buscando un pretendiente digno: le llega un anciano y un niño heredero de los Blackwood.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/3PUDi380j8xIwJ3dMAext9kj2GR.jpg"
+							alt="2x04">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E4. El Dragón Rojo y el Dorado</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="14 de julio de 2024" data-duration="1h 3m"
+						data-vote-average="7.3"
+						data-synopsis="Mientras los Verdes estudian cómo llenar el vacío en el Consejo de Aegon, Daemon intenta persuadir a los Bracken para que se arrodillen ante él.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/b2ynXBWVy0dSL47lUDbQeiPW5SH.jpg"
+							alt="2X05">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E5. Regente</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+					<div class="chapter-container" data-year="21 de julio de 2024" data-duration="1h 8m"
+						data-vote-average="7.6"
+						data-synopsis="Con pocas opciones pendientes, Rhaenyra se embarca en una peligrosa aventura, mientras que Aemond da pasos para dar una nueva forma al Consejo Verde.">
+						<img src="https://media.themoviedb.org/t/p/w227_and_h127_bestv2/cCUY9j9Yv8q0T9Pw6oAzoMcbP1M.jpg"
+							alt="2x06">
+						<div class="episode-title-wrapper">
+							<div class="episode-title">E6. El populacho</div>
+						</div>
+						<div class="chapter-info"></div>
+					</div>
+
+
+				</div> <button class="nav-button right">&gt;</button>
+			</div>
+
+			<!--Fin temporada 2-->
+			<div class="recomendados">
+				<h2 class="encabezado">También te puede interesar</h2>
+				<div class="wrapper simple-scroll"> <button class="nav-button left">&lt;</button>
+					<div class="container movie-container movie-simple">
+						<!-- Añadir elementos .movie aquí -->
+						<div class="movie" data-title="Everlasting God of Sword" data-year="2022" data-vote-average="5"
+							data-genre="Animación, Acción y Aventura, Drama, Ciencia ficción y Fantasía"
+							data-synopsis="Era el mayor talento del Reino de los Nueve Infiernos. Shen Zhenyi comenzó a practicar su espada cuando tenía cuatro años y dos meses. A la edad de siete años, estudió el Sutra de las Diez Mil Espadas. A los once años, luchó contra los Yudao en el Palacio de Shangqing. En un instante, descargó ciento ochenta y cinco golpes de espada, haciendo imposible que nadie tomara represalias. Los Yudao admitieron su derrota y le consideraron &quot;El Genio sin par&quot;. A la edad de 14 años, Shen Zhenyi, con sus Seis Formas de la Espada Antigua, superó al espadachín Zuo Tianxing, que estaba clasificado entre los diez mejores maestros del mundo, y ganó el título de &quot;El Primer Espadachín del Abismo&quot;. Ahora yace lisiado. Una fracción del estado en el que estaba antes. O al menos eso pensaban.">
+							<img src="https://image.tmdb.org/t/p/original/pcOB296HGv4CMekmeGOP6amA02G.jpg"
+								alt="Everlasting God of Sword">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Tira" data-year="2023" data-vote-average="7.2"
+							data-genre="Acción y Aventura, Drama, Ciencia ficción y Fantasía"
+							data-synopsis="Sin descripción."> <img
+								src="https://image.tmdb.org/t/p/original/vrWfqRCQ1h4jIQiJqweOBsmCcDr.jpg" alt="Tira">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="我らがパラダイス" data-year="2023" data-vote-average="0"
+							data-genre="Drama" data-synopsis="Sin descripción."> <img
+								src="https://image.tmdb.org/t/p/original/yMh61P275SvIYuH7VjCCCG4yP9N.jpg"
+								alt="我らがパラダイス">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Ataque a los Titanes" data-year="2013" data-vote-average="8.6"
+							data-genre="Animación, Ciencia ficción y Fantasía, Acción y Aventura"
+							data-synopsis="Hace cien años, los titanes atacaron y diezmaron a la humanidad. Para sobrevivir, esta se recluyó en grandes ciudades amuralladas, creyendo que estaría segura para siempre. Pero, cien años después de aquel ataque, un titán colosal hace su aparición en una de las urbes, destruye el parapeto y permite que sus congéneres menores devoren de nuevo a los hombres. El Cuerpo de Exploradores, al que pertenece Eren Jaeger, deberá enfrentarse a ellos y contraatacarlos, para que la humanidad pueda vivir de nuevo en paz.">
+							<img src="https://image.tmdb.org/t/p/original/yFPQ4JhhirnCVe2UIKGMYX7TOGZ.jpg"
+								alt="Ataque a los Titanes">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Orgullo y prejuicio" data-year="1995" data-vote-average="8.2"
+							data-genre="Drama"
+							data-synopsis="Miniserie de TV de 6 episodios. Adaptación en formato miniserie de la famosa novela de Jane Austen ambientada a comienzos del siglo XIX, en la que los prejuicios y las diferencias sociales constituyen un obstáculo casi insalvable en las relaciones amorosas.">
+							<img src="https://image.tmdb.org/t/p/original/fKUTpRxv1mnedNtHTufzWR37WkA.jpg"
+								alt="Orgullo y prejuicio">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Tracker" data-year="2024" data-vote-average="7.2"
+							data-genre="Drama, Crimen"
+							data-synopsis="Colter Shaw recorre el país en su vieja autocaravana para ayudar a la policía y a ciudadanos particulares a resolver crímenes y localizar a personas desaparecidas, hasta que su último caso lo cambia todo.">
+							<img src="https://image.tmdb.org/t/p/original/5PXqBrCQ0FdDDtFCVhUyLDSwZYF.jpg"
+								alt="Tracker">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="핀란드 파파" data-year="2023" data-vote-average="2" data-genre="Drama"
+							data-synopsis="Sin descripción."> <img
+								src="https://image.tmdb.org/t/p/original/pBq4fe47ADYzIWHOraHelSZDxi9.jpg" alt="핀란드 파파">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="The Sign" data-year="2023" data-vote-average="9.3"
+							data-genre="Misterio, Drama, Acción y Aventura, Ciencia ficción y Fantasía"
+							data-synopsis="Desde que Tharn puede recordar, ha tenido premoniciones sobre quienes lo rodean, sintiendo tanto lo bueno como lo malo. Socios en un equipo de investigadores especiales, cuando el amable y alegre Tharn conoció al inteligente y encantador Phaya, se sintió como si se conocieran desde hace mucho tiempo.s, continúa nuevamente en el campus. ¿Podrán reconectar sus lazos rotos?">
+							<img src="https://image.tmdb.org/t/p/original/x9nbRCyOD1WJK13rqrZPleJJoKp.jpg"
+								alt="The Sign">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Jurassic World: Teoría del dinocaos" data-year="2024"
+							data-vote-average="8.4"
+							data-genre="Animación, Acción y Aventura, Ciencia ficción y Fantasía, Niños, Familia"
+							data-synopsis="La pandilla del Campamento Cretácico se junta para desentrañar un misterio tras descubrir una conspiración global que pone en peligro a los dinosaurios… y a ellos mismos.">
+							<img src="https://image.tmdb.org/t/p/original/pOjg0y1DpXf7oIqYu5FCXTOnKJR.jpg"
+								alt="Jurassic World: Teoría del dinocaos">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="순정복서" data-year="2023" data-vote-average="7.1" data-genre="Drama"
+							data-synopsis="Sin descripción."> <img
+								src="https://image.tmdb.org/t/p/original/7grqZHh5uURi8ZENZwS5O6xezPS.jpg" alt="순정복서">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="대도시의 사랑법" data-year="Desconocido" data-vote-average="0"
+							data-genre="Drama" data-synopsis="Sin descripción."> <img
+								src="https://image.tmdb.org/t/p/original/KXLA43DSV1T67hWF8iMUsTLYyS.jpg" alt="대도시의 사랑법">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="La Pasión Turca" data-year="2024" data-vote-average="5.3"
+							data-genre="Drama"
+							data-synopsis="Olivia, tras haber intentado suicidarse, es investigada por su colaboración una red de contrabando de obras de arte junto a Yaman, su amante turco del que está plenamente enamorada.">
+							<img src="https://image.tmdb.org/t/p/original/5PYnJtDj3D6KU2AtQr5OVuU8lBG.jpg"
+								alt="La Pasión Turca">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Boardwalk Empire" data-year="2010" data-vote-average="8"
+							data-genre="Crimen, Drama"
+							data-synopsis="La Primera Guerra Mundial (1914-1918) ha terminado y Wall Street está a punto de explotar. Es una época de cambios: las mujeres obtienen el derecho al voto, la radio llega a los hogares y los jóvenes gobiernan el mundo. Atlantic City (Nueva Jersey) es un espectacular lugar de vacaciones en el que sólo se respetan las reglas impuestas por Enoch &quot;Nucky&quot; Thompson (Steve Buscemi). Basada en hechos reales, se inspira en la obra homónima de Nelson Johnson.">
+							<img src="https://image.tmdb.org/t/p/original/3IKbPI1uQFcT7gNHi3la7uwOnsN.jpg"
+								alt="Boardwalk Empire">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Oranges Are Not the Only Fruit" data-year="1990"
+							data-vote-average="6.6" data-genre="Drama" data-synopsis="Sin descripción."> <img
+								src="https://image.tmdb.org/t/p/original/mMETYbPN7PJeSkEpKeOlSrzStTV.jpg"
+								alt="Oranges Are Not the Only Fruit">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="El misterio de Hanging Rock" data-year="2018"
+							data-vote-average="5.9" data-genre="Drama, Misterio, Talk"
+							data-synopsis="Remake televisivo del clásico de culto del cine australiano sobre la misteriosa desaparición de una profesora y tres jóvenes internas de una escuela de señoritas en el día de San Valentín del año 1900.">
+							<img src="https://image.tmdb.org/t/p/original/tO5lLXy9GdxSRrKKlreqgLVfYGr.jpg"
+								alt="El misterio de Hanging Rock">
+							<div class="movie-info"></div>
+						</div>
+						<div class="movie" data-title="Miracle Workers" data-year="2019" data-vote-average="6.8"
+							data-genre="Comedia, Drama"
+							data-synopsis="Una comedia ambientada en las oficinas de Heaven Inc. Cuando Dios planea destruir la Tierra, dos ángeles de bajo nivel deben convencer a su jefe de salvar a la humanidad. Le apuestan a que pueden lograr su milagro más imposible: ayudar a dos humanos a enamorarse.">
+							<img src="https://image.tmdb.org/t/p/original/yrvfcgR0R9uGxyMYrQGxe7Gu47i.jpg"
+								alt="Miracle Workers">
+							<div class="movie-info"></div>
+						</div>
+					</div> <button class="nav-button right">&gt;</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script>
+
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/full.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+/* Mi lista */
+
+
+
+.contenido-lista {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.day-of-program {
+    font-weight: 500;
+    font-size: 18px;
+    color: #89bfc4 !important;
+    margin-bottom: 7px;
+}
+
+.lista-milista {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.selected-milista {
+    padding: 7px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.unselected-milista {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+}
+
+.texto-negro-milista,
+.texto-blanco-milista {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.texto-negro-milista {
+    color: #242424;
+}
+
+.texto-blanco-milista {
+    color: #fff;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    /* Alinea los programas en forma de lista verticalmente */
+    flex: 2;
+    min-width: 300px;
+}
+
+
+.fa-chevron-down {
+    color: #fafafa !important;
+}
+
+.fa-chevron-up {
+    color: #fafafa !important;
+}
+
+.programa-milista {
+    cursor: pointer;
+    margin-left: 5px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contenedor-descripcion-programa-milista {
+    width: 100%;
+    /* Asegura que la descripción ocupe todo el ancho disponible */
+    height: auto;
+    color: #ccc;
+    background: #33333345;
+    border-radius: 10px;
+}
+
+/* Estilo del botón de descripción */
+.titulo-con-boton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-descripcion {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Flecha hacia abajo por defecto */
+.btn-descripcion .fa-chevron-down {
+    transform: rotate(0deg);
+}
+
+/* Flecha hacia arriba cuando está visible */
+.btn-descripcion.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Estilo de la descripción */
+.contenedor-descripcion-programa-milista {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin-bottom 0.3s ease;
+
+
+}
+
+.contenedor-descripcion-programa-milista.visible {
+    max-height: 1000px;
+    /* Valor alto para permitir el despliegue completo */
+    opacity: 1;
+}
+
+
+
+.titulo-programa-milista {
+    font-size: 25px;
+    color: #fafafa;
+    margin-bottom: 5px;
+}
+
+.hora-programa-milista {
+    color: #a0a0a0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.logo-programa-milista {
+    object-fit: cover;
+    max-width: 60px;
+    height: auto;
+}
+
+@media screen and (max-width: 1245px) {
+    .contenedor-descripcion-programa-milista {
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .programa-milista {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .contenido-lista {
+        padding: 100px 50px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenido-lista {
+        padding: 100px 20px;
+    }
+
+    .lista-milista,
+    .contenido-principal {
+        flex: 1 1 100%;
+    }
+
+    .lista-milista {
+        display: none;
+    }
+
+    .selected-milista,
+    .unselected-milista {
+        flex: 1 1 calc(50% - 10px);
+        /* Cada opción ocupa el 50% del ancho menos un pequeño margen */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .milista-item {
+        max-width: 50vw;
+    }
+
+    .milista-item p {
+        font-size: 15px !important;
+    }
+
+    .titulo-programa-milista {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .contenedor-descripcion-programa-milista {
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .programa-milista {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 899px) {
+    .contenido-lista {
+        padding: 100px 20px;
+    }
+
+    .lista-milista,
+    .contenido-principal {
+        flex: 1 1 100%;
+    }
+
+    .lista-milista {
+        display: none;
+    }
+
+    .selected-milista,
+    .unselected-milista {
+        flex: 1 1 calc(50% - 10px);
+        /* Cada opción ocupa el 50% del ancho menos un pequeño margen */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .milista-item {
+        max-width: 50vw;
+    }
+
+    .milista-item p {
+        font-size: 15px !important;
+    }
+
+    .titulo-programa-milista {
+        font-size: 20px;
+    }
+
+    #list-selector {
+        display: block;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .contenido-lista {
+        padding: 100px 50px;
+    }
+
+
+    #list-selector {
+        display: none;
+    }
+
+}
+
+
+#list-selector>option {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    background-color: rgb(247, 247, 247);
+    background-image: none;
+    font-size: 15px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid rgb(41, 18, 18);
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) and (max-width: 1261px) {
+
+    .movie2 {
+        width: calc(100% / 4 - 1em) !important;
+    }
+}
+
+
+.content-all-movies {
+    padding: 0px;
+}
+
+.slide {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 769px) {
+    .slide {
+        width: 95% !important;
+    }
+}
+
+
+.triatlon::after {
+    background-position: top !important;
+}
+
+
+.futbol::after {
+    background-position: bottom !important;
+}
+
+.tenis::after {
+    background-position: bottom !important;
+}
+
+
+.baloncesto::after {
+    background-position: top !important;
+}
+
+.artesmarciales::after {
+    background-position: top !important;
+}
+
+
+.rugby::after {
+    background-position: top !important;
+}
+
+
+.golf::after {
+    background-position: center !important;
+}
+
+
+.ciclismo::after {
+    background-position: top !important;
+}
+
+.hipica::after {
+    background-position: top !important;
+}
+
+
+.hockey::after {
+    background-position: top !important;
+}
+
+.esqui::after {
+    background-position: top !important;
+}
+
+
+.natacion::after {
+    background-position: center !important;
+}
+
+
+.motor::after {
+    background-position: top !important;
+}
+
+
+
+.motociclismo::after {
+    background-position: top !important;
+}
+
+
+.boxeo::after {
+    background-position: top !important;
+}
+
+.atletismo::after {
+    background-position: center !important;
+}
+
+.voleybol::after {
+    background-position: center !important;
+}
+
+
+.padel::after {
+    background-position: center !important;
+}
+
+.waterpolo::after {
+    background-position: center !important;
+}
+
+.piraguismo::after {
+    background-position: center !important;
+}
+
+.balonmano::after {
+    background-position: top !important;
+}
+
+
+.pingpong::after {
+    background-position: top !important;
+}
+
+
+
+.otros::after {
+    background-position: top !important;
+}
+
+hr {
+    height: 0px;
+    /*solo queremos borde*/
+    text-align: left;
+    border-top: 0px;
+    /*quita el grosor extra de Opera y FFox*/
+    border-bottom: #c3c3c3 solid 1px;
+}

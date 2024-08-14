@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Trama, la mejor opción de contenido bajo demanda y televisión en directo. Todo tipo de contenido al alcance de tu dedo.">
+    <meta name="keywords" content="Trama, películas, series, IPTV, televisión, películas, contenido bajo demanda, VOD">
+    <meta name="author" content="Trama">
+    <meta name="robots" content="index, follow">
+    <title>Trama - Contenido bajo demanda y Televisión en directo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="css/full.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/options.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <header class="header">
+        <h1 class="logo">Trama<sup>&#8226;</sup></h1>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="top-menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="search.html">Buscar</a></li>
+
+            <li><a href="tv.html">TV</a></li>
+
+            <li><a href="cine.html">Cine</a></li>
+
+
+            <li><a href="series.html">Series</a></li>
+
+            <li><a href="deportes.html">Deportes</a></li>
+
+
+            <li><a href="grabaciones.html">Grabaciones</a></li>
+
+
+            <li><a href="mi-lista.html">Mi lista</a></li>
+
+            <li><a href="opciones.html">Opciones<span class="live-brod">&#8226;</span></a></li>
+
+        </ul>
+    </header>
+    <main>
+
+
+        <div class="contenido-lista">
+
+
+            <label class="select" style="width: 100%;">
+                <select id="list-selector">
+                    <option value="general">General</option>
+                    <option value="apariencia">Apariencia</option>
+                    <option value="reproduccion">Reproducción</option>
+                    <option value="mando">Mando a distancia</option>
+                    <option value="tactil">Táctil</option>
+                    <option value="parental">Control Parental</option>
+                    <option value="privacidad">Privacidad</option>
+                    <option value="hotel">Modo Hotel</option>
+                    <option value="otros">Otro</option>
+                </select>
+            </label>
+            <div class="lista-milista">
+
+                <div class="selected-milista milista-item" data-content="general">
+                    <p class="texto-negro-milista">General</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="apariencia">
+                    <p class="texto-blanco-milista">Apariencia</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="reproduccion">
+                    <p class="texto-blanco-milista">Reproducción</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="mando">
+                    <p class="texto-blanco-milista">Mando a distancia</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="tactil">
+                    <p class="texto-blanco-milista">Táctil</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="parental">
+                    <p class="texto-blanco-milista">Control Parental</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="privacidad">
+                    <p class="texto-blanco-milista">Privacidad</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="hotel">
+                    <p class="texto-blanco-milista">Modo Hotel</p>
+                </div>
+                <div class="unselected-milista milista-item" data-content="otros">
+                    <p class="texto-blanco-milista">Otros</p>
+                </div>
+
+            </div>
+            <div class="contenido-principal">
+                <div id="general" class="contenido-seccion">
+                    <h2>Configuración General</h2>
+
+                    <div class="opcion-item">
+                        <!-- <div class="icono">
+                            <img src="icono-sonido.png" alt="Icono de sonido" width="24">
+                        </div>-->
+                        <div class="descripcion">
+                            <strong>Abrir aplicación al encender</strong>
+                            <!--<p>Activa o desactiva los sonidos de notificación.</p>-->
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <!-- <div class="icono">
+                                <img src="icono-sonido.png" alt="Icono de sonido" width="24">
+                            </div>-->
+                        <div class="descripcion">
+                            <strong>Abrir aplicación tras despertar del modo suspensión</strong>
+                            <p>Puede que no funcione en todos los dispositivos</p>
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <!-- <div class="icono">
+                                <img src="icono-sonido.png" alt="Icono de sonido" width="24">
+                            </div>-->
+                        <div class="descripcion">
+                            <strong>Abrir el último canal reproducido al abrir la app</strong>
+                            <!--<p>Activa o desactiva los sonidos de notificación.</p>-->
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Confirmar salir de la APP con dos pulsaciones del botón Atrás</strong>
+                            <!--<p>Activa o desactiva los sonidos de notificación.</p>-->
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>User-Agent</strong>
+                            <p>Sin establecer</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>UDP Proxy (dirección:puerto)</strong>
+                            <p>Sin establecer</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Respaldar datos</strong>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Reestablecer datos</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="apariencia" class="contenido-seccion" style="display: none;">
+
+                    <h2>Apariencia</h2>
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Idioma</strong>
+                            <p>Español</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Tamaño de la fuente</strong>
+                            <p>Mediano</p>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Transpariencia</strong>
+                            <p>30%</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="reproduccion" class="contenido-seccion" style="display: none;">
+
+                    <h2>Reproducción</h2>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Tamaño del búffer</strong>
+                            <p>Medio</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Descodificación de audio</strong>
+                            <p>Hadware</p>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Auto frame rate (AFR)</strong>
+                            <p>Desactivado</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Seleccione la pista de audio envolvente de forma predeterminada</strong>
+                        </div>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Transferencia de audio</strong>
+                        </div>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Tunneled playback</strong>
+                        </div>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Corrección Amlogic</strong>
+                            <p>Activado</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div id="mando" class="contenido-seccion" style="display: none;">
+                    <h2>Mando a distancia</h2>
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Guía de TV</strong>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Reproductor TV</strong>
+                        </div>
+                    </div>
+
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Reproductor VOD</strong>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div id="tactil" class="contenido-seccion" style="display: none;">
+                    <h2>Táctil</h2>
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Sensibilidad</strong>
+                            <p>45%</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Velocidad</strong>
+                            <p>50%</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="parental" class="contenido-seccion" style="display: none;">
+                    <h2>Control Parental</h2>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Activado</strong>
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Cambiar PIN</strong>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>No pedir PIN después de desbloquear</strong>
+                            <p>Pedir siempre</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="privacidad" class="contenido-seccion" style="display: none;">
+                    <h2>Privacidad</h2>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Uso de historial</strong>
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Borrar el historial</strong>
+                            <p>Después de 30 días</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>No guardar en el historial (Películas)</strong>
+                            <p>Calificadas +18</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>No guardar en el historial (Canales)</strong>
+                            <p>Calificados +18</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="hotel" class="contenido-seccion" style="display: none;">
+                    <h2>Modo Hotel</h2>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Activar</strong>
+                        </div>
+                        <div class="toggle-container-4">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked="">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Control de Huespedes</strong>
+                            <p class="aclaration">No aloje información confindencial, solo control de entrada y salidas.
+                                Use datos cifrados.</p>
+                            <p>API</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Servidor</strong>
+                            <p>192.217.785.272</p>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Puerto</strong>
+                            <p>81</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="otros" class="contenido-seccion" style="display: none;">
+                    <h2>Otros</h2>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Buscar</strong>
+                        </div>
+                    </div>
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Recordatorios</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>Grabando</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="opcion-item">
+                        <div class="descripcion">
+                            <strong>VOD</strong>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/full.js"></script>
+</body>
+
+</html>

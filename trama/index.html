@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Trama, la mejor opción de contenido bajo demanda y televisión en directo. Todo tipo de contenido al alcance de tu dedo.">
+    <meta name="keywords" content="Trama, películas, series, IPTV, televisión, películas, contenido bajo demanda, VOD">
+    <meta name="author" content="Trama">
+    <meta name="robots" content="index, follow">
+    <title>Trama - Contenido bajo demanda y Televisión en directo</title> <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="theme-color" content="#000000"> <!-- Estilos y fuentes -->
+    <link rel="stylesheet" href="css/full.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">Trama<sup>&#8226;</sup></h1>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="top-menu">
+            <li><a href="index.html">Inicio<span class="live-brod">&#8226;</span></a></li>
+
+            <li><a href="search.html">Buscar</a></li>
+
+            <li><a href="tv.html">TV</a></li>
+
+            <li><a href="cine.html">Cine</a></li>
+
+
+            <li><a href="series.html">Series</a></li>
+
+            <li><a href="deportes.html">Deportes</a></li>
+
+
+            <li><a href="grabaciones.html">Grabaciones</a></li>
+
+
+            <li><a href="mi-lista.html">Mi lista</a></li>
+
+            <li><a href="opciones.html">Opciones</a></li>
+
+        </ul>
+    </header>
+    <main>
+        <ul class="carousel">
+            <li class="carousel-item"
+                style="background-image: url('https://image.tmdb.org/t/p/original/pTsKxIZy2w1Tu8IGbD3u9KgVFgC.jpg')">
+                <div class="stream-summary">
+                    <h2 class="stream-title">Los que se quedan</h2>
+                    <p class="stream-summary-text">A nadie le gusta el profesor Paul Hunham (Giamatti), ni a sus
+                        alumnos, ni a sus compañeros, ni al director de la escuela secundaria donde trabaja, a todos
+                        les resulta exasperante su pomposidad y rigidez.</p> <button
+                        class="stream-button button-home"><i class="fas fa-play"></i><span class="button"> Ver
+                            ahora</span></button> <span class="stream-provider"></span>
+                </div>
+            </li>
+            <li class="carousel-item"
+                style="background-image: url('https://image.tmdb.org/t/p/original/moAPa0kotCJZXC5nSnoNNPP0kUE.jpg')">
+                <div class="stream-summary">
+                    <h2 class="stream-title">Animales fantásticos: Los secretos de Dumbledore</h2>
+                    <p class="stream-summary-text">El profesor Albus Dumbledore sabe que el poderoso mago oscuro
+                        Gellert Grindelwald está haciendo planes para apoderarse del mundo mágico.</p> <button
+                        class="stream-button button-home"><i class="fas fa-play"></i><span class="button"> Ver
+                            ahora</span></button> <span class="stream-provider"></span>
+                </div>
+            </li>
+            <li class="carousel-item"
+                style="background-image: url('https://image.tmdb.org/t/p/original/wODqakS0jinTUECNS6n4VomQbew.jpg')">
+                <div class="stream-summary">
+                    <h2 class="stream-title">Cazafantasmas: Imperio helado</h2>
+                    <p class="stream-summary-text">Después de los eventos de Oklahoma, el equipo de Cazafantasmas
+                        regresa a donde comenzó todo: ¡Nueva York! La historia de la familia Spengler continúa con
+                        un nuevo grupo de Cazafantasmas.</p> <button class="stream-button button-home"><i
+                            class="fas fa-play"></i><span class="button"> Ver ahora</span></button> <span
+                        class="stream-provider"></span>
+                </div>
+            </li>
+        </ul>
+
+
+
+        <div id="index" class="content"></div>
+        <div class="outer-container">
+            <div class="loading">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Ensure jQuery is included -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Función para inicializar el manejo de eventos de desplazamiento
+            function initializeTouchEvents() {
+
+            }
+
+            // Inicializa el manejo de eventos al cargar la página
+            initializeTouchEvents();
+        });
+
+
+        $(document).ready(function () {
+            // Función que verifica si el elemento con el ID #channelsContainer está presente
+            function checkElement() {
+                if ($('#channelsContainer').length) {
+                    // Selecciona el contenedor de canales
+                    var $container = $('#channelsContainer');
+
+                    // Manejo del evento de toque para dispositivos móviles
+                    $container.off('touchstart').on('touchstart', function (e) {
+                        var startX = e.originalEvent.touches[0].pageX;
+                        var scrollLeft = $container.scrollLeft();
+
+                        $container.off('touchmove').on('touchmove', function (e) {
+                            var currentX = e.originalEvent.touches[0].pageX;
+                            var deltaX = startX - currentX;
+                            $container.scrollLeft(scrollLeft + deltaX);
+                        });
+
+                        $container.off('touchend').on('touchend', function () {
+                            $container.off('touchmove touchend');
+                        });
+                    });
+                }
+            }
+
+            // Ejecutar checkElement cada 500 milisegundos
+            var intervalId = setInterval(checkElement, 500);
+        });
+    </script>
+    <script src="js/full.js"></script>
+
+</body>
+
+</html>
