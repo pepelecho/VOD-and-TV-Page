@@ -14,8 +14,8 @@ The TV guide for PC (Timeline) is not functional and contains errors. I would be
 # Images are worth a thousand words
 
 <div style="display: flex; height: auto">
-  <img alt="Screenshot_2024.06.02_21.41.42.490.png" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/1.png?raw=true" style="max-width: 50%; height: auto;>
-      <img alt="Screenshot_2024.06.02_21.44.50.713.png" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/2.png?raw=true" style="max-width: 50%; height: auto;">
-  <img alt="Screenshot_2024.06.02_21.44.50.713.png" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/10.png?raw=true" style="max-width: 50%; height: auto;">
-  <img alt="Screenshot_2024.06.02_21.44.50.713.png" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/5.png?raw=true" style="max-width: 50%; height: auto;">
+  <img alt="Inicio" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/1.png?raw=true" style="max-width: 50%; height: auto;>
+  <img alt="Buscador" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/2.png?raw=true" style="max-width: 50%; height: auto;">
+  <img alt="Series" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/10.png?raw=true" style="max-width: 50%; height: auto;">
+  <img alt="Deportes" src="https://github.com/pepelecho/VOD-and-TV-Page/blob/main/screenshots/5.png?raw=true" style="max-width: 50%; height: auto;">
 </div>
